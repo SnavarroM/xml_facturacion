@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Perfil" %}{% endblock %}
+
+{% block content %}
+<div class="col-md-4 mx-auto">
+<h2>{% trans "Perfil de Usuario" %}</h2>
+<h3 class='text-secondary'>Bienvenid@ !!!  {{ user.username }}</h3>
+<hr>
+<p><strong>Nombre de Usuario: </strong>{{ user.username }}</p>
+<p><strong>Nombre: </strong>{{ user.firstname }}</p>
+<p><strong>Apellido: </strong>{{ user.lastname }}</p>
+<p><strong>E-Mail: </strong>{{ user.email }}</p>
+<hr>
+</div>
+
+
+
+{% endblock %}
